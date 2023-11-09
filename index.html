@@ -1,8 +1,8 @@
-<‍!DOCTYPE html>
-<‍html>
-<‍head>
-    <‍title>日期选择<‍/title>
-    <‍style>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>日期选择</title>
+    <style>
         body {
             font-family: Arial, sans-serif;
             background-color: #f0f0f0;
@@ -20,20 +20,20 @@
             border-radius: 4px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
-    <‍/style>
-<‍/head>
-<‍body>
-    <‍div class="container">
-        <‍h1>请选择一个日期<‍/h1>
-        <‍select id="dateSelect" onchange="goToPage()">
-            <‍option value="">请选择<‍/option>
-            <‍option value="2022-01-01.html">2022-01-01<‍/option>
-            <‍option value="2022-01-02.html">2022-01-02<‍/option>
-            <‍option value="2022-01-03.html">2022-01-03<‍/option>
-            <‍!-- 添加更多日期选项 -->
-        <‍/select>
-    <‍/div>
-    <‍script>
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>请选择一个日期</h1>
+        <select id="dateSelect" onchange="goToPage()">
+            <option value="">请选择</option>
+            <option value="2022-01-01.html">2022-01-01</option>
+            <option value="2022-01-02.html">2022-01-02</option>
+            <option value="2022-01-03.html">2022-01-03</option>
+            <!-- 添加更多日期选项 -->
+        </select>
+    </div>
+    <script>
         function goToPage() {
             var select = document.getElementById("dateSelect");
             var selectedValue = select.options[select.selectedIndex].value;
@@ -41,6 +41,6 @@
                 window.location.href = selectedValue;
             }
         }
-    <‍/script>
-<‍/body>
-<‍/html>
+    </script>
+</body>
+</html>
