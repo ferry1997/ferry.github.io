@@ -1,28 +1,28 @@
-<‍!DOCTYPE html>
-<‍html>
-<‍head>
-    <‍title>Login Page<‍/title>
-    <‍style>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Login Page</title>
+    <style>
         body {
-            background-image: url('background.jpg');
+            background-image: url('background.png');
             background-size: cover;
         }
-    <‍/style>
-<‍/head>
-<‍body>
-    <‍h2>Login Page<‍/h2>
+    </style>
+</head>
+<body>
+    <h2>Login Page</h2>
 
-    <‍div>
-        <‍label for="username">Username:<‍/label>
-        <‍input type="text" id="username" name="username">
-    <‍/div>
-    <‍div>
-        <‍label for="password">Password:<‍/label>
-        <‍input type="password" id="password" name="password">
-    <‍/div>
-    <‍button onclick="login()">Login<‍/button>
+    <div>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password">
+    </div>
+    <button onclick="login()">Login</button>
 
-    <‍script>
+    <script>
         function login() {
             var username = document.getElementById('username').value;
             var password = document.getElementById('password').value;
@@ -33,6 +33,6 @@
                 alert('Incorrect username or password!');
             }
         }
-    <‍/script>
-<‍/body>
-<‍/html>
+    </script>
+</body>
+</html>
